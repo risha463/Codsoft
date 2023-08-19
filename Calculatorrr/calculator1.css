@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#f6f6f6, #e1e1e1);
+}
+
+.container {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #ffafcc, #ffc3a0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.display {
+    height: 120px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button button {
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #ffc3a0, #ffb085);
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button button:hover {
+    background: linear-gradient(to bottom right, #ffb085, #ffc3a0);
+    transform: scale(1.05);
+}
+
+.button button:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    color: #e1e1e1;
+}
+
+button.opo {
+    background: linear-gradient(#7d4b91, #5e3667);
+}
+
+button.opo:hover {
+    background: linear-gradient(#5e3667, #7d4b91);
+}
+
+button.eq {
+    background: linear-gradient(#ffa500, #ffcc00);
+    color: #fff;
+}
+
+button.eq:hover {
+    background: linear-gradient(#ffcc00, #ffa500);
+}
