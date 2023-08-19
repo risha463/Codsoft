@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Harry Potter</title>
+    <link rel="stylesheet" href="harry.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting hat</h1>
+    </header>
+
+
+<!-- Sorting Hat Section -->
+<section class="sorting-hat">
+    <h2>The Sorting Hat</h2>
+    <img src="sortinghat1.png"Sorting Hat" id="hat-image">
+    <button onclick="sortHouse()">Sort Me</button>
+    <p id="sorting-result">Waiting for the Sorting Hat to decide...</p>
+</section>
+
+
+<div class="cartoon-character1"></div>
+
+<!-- Other Sections -->
+<!-- Your content for other sections (Events, Thoughts, Gallery, etc.) goes here -->
+
+<script>
+    function sortHouse() {
+        const houses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'];
+        const randomHouse = houses[Math.floor(Math.random() * houses.length)];
+        document.getElementById('sorting-result').innerText = `Congratulations! You belong to ${randomHouse}!`;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+
+/* Styling for the header and navigation menu */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li a:hover {
+    background-color: #777;
+}
+
+/* Styling for sections (you can customize this according to your design) */
+section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for section headings (optional) */
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+
+
+.search-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.search-form {
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for dropdown menu */
+.rd-navbar-dropdown-menu {
+    display: none;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+}
+
+.rd-navbar-dropdown:hover .rd-navbar-dropdown-menu {
+    display: block;
+}
+
+.rd-navbar-dropdown-menu li {
+    margin: 5px 0;
+}
+
+.rd-navbar-dropdown-menu a {
+    color: #fff;
+}
+
+
+/* Styling to align search icon with navigation links */
+nav {
+    position: relative;
+}
+
+nav .search-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the sorting hat section */
+.sorting-hat {
+    text-align: center;
+}
+
+#hat-image {
+    max-width: 400px;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.banner-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.banner h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Rotate on hover */
+.banner:hover img {
+    transform: rotateY(180deg);
+}
+
+/* Styles for the cartoon character container */
+.cartoon-character {
+    position: fixed;
+    bottom: 20px; /* Adjust as per your desired position */
+    left: 20px; /* Adjust as per your desired position */
+    width: 300px; /* Adjust the size of the container as per your cartoon character */
+    height: 200px;
+    background-image: url('harrycartoon.png'); /* Replace with your cartoon character image */
+    background-size: cover; /* Adjust as needed */
+    animation: moveCharacter 5s infinite alternate; /* Animation duration and behavior */
+}
+
+/* Keyframe animation for moving the character */
+@keyframes moveCharacter {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(30px); /* Adjust the distance the character moves */
+    }
+}
+
+
+.cartoon-character1 {
+    position: fixed;
+    bottom: 20px; /* Adjust as per your desired position */
+    left: 20px; /* Adjust as per your desired position */
+    width: 300px; /* Adjust the size of the container as per your cartoon character */
+    height: 200px;
+    background-image: url('harryc.png'); /* Replace with your cartoon character image */
+    background-size: cover; /* Adjust as needed */
+    animation: moveCharacter 5s infinite alternate; /* Animation duration and behavior */
+}
+
+/* Keyframe animation for moving the character */
+@keyframes moveCharacter {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(30px); /* Adjust the distance the character moves */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main h2 {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.5rem;
+}
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Style the heading */
+.intro h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;}
+
+.intro img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Styling for rotating the image */
+.rotate-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-image:hover {
+    transform: rotateY(180deg);
+}
+
+
+/* Style the Harry Potter Movies section */
+.movies {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+/* Style the heading */
+.movies h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the list items */
+.movies li {
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    margin: 10px;
+}
+
+/* Style the movie posters */
+.movies img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the movie titles */
+.movies p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li:before {
+    content: "•";
+    margin-right: 5px;
+}
+
+footer {
+    background-color: bisque;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+}
+
+
+/* harry.css */
+
+/* Apply a background color to the body */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the page title */
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Style links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the main content area */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#news {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+#news h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#news article {
+    margin-bottom: 20px;
+}
+
+#news article h3 {
+    color: #555;
+}
+
+#news article p {
+    color: #777;
+}
+
